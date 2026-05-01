@@ -1,5 +1,7 @@
 # Claude Code × OpenCode Zen API — Cross-Platform Setup Guide, no proxy, no rate limiting, no bs.
 
+Translations: [Arabic](README.ar.md) | [Chinese](README.zh.md)
+
 > **Privacy notice first:** Free models on OpenCode Zen or ANY OTHER FREE LLM PROVIDER may use your prompts to improve their models.
 > Avoid sending sensitive code, credentials, or proprietary information.
 > See the [Zen privacy docs](https://opencode.ai/docs/zen/#privacy) and [privacy policy](https://opencode.ai/legal/privacy-policy) for details.
