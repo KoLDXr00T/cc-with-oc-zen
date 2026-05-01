@@ -28,13 +28,12 @@ Only two models are currently confirmed to work reliably:
 
 Other models won't not work for now. 
 [If you care enough, report it as an issues here](https://github.com/anomalyco/opencode/issues/new).
-reported issue to maintainers , check here for any updates.
 
 ---
 
 ## Known Limitations
 
-- ❌ **Claude for Chrome** extension is not supported — as Zen is an API backend only
+- ❌ **Claude for Chrome** extension is not supported — as Zen is an API backend only, yet playwright works well.
 - ❌ **Slack, Telegram, etc channels integrations** are not supported
 - ❌ Only `big-pickle` and `minimax-m2.5-free` models work.
 - ❌ Again, as these are free models, prompts may be used for training — do not send sensitive or proprietary code.
@@ -77,9 +76,17 @@ Place it in `PASTE_YOUR_KEY` in `config.json` file.
 
 This **config file** method is the only method I recommend as it is portable and platform-agnostic.
 
-fisrt back up you existing config , as you will need to overwrite your exis
+Fisrt back up you existing config , as you will need to overwrite your existing one.
 
-Create or edit `.claude/config.json` in your home directory:
+```
+# macOS / Linux
+~/.claude/config.json
+
+# Windows
+%USERPROFILE%\.claude\config.json
+```
+
+Create or edit `config.json` in your home directory:
 
 ```json
 {
@@ -92,15 +99,7 @@ Create or edit `.claude/config.json` in your home directory:
   },
   "model": "big-pickle"
 }
-
 ```
-# macOS / Linux
-~/.claude/config.json
-
-# Windows
-%USERPROFILE%\.claude\config.json
-```
-
 ---
 
 ---
@@ -119,7 +118,8 @@ Claude Code will automatically use Zen as its backend. Ask it something simple t
 
 ## How It Works
 
-Zen acts as a drop-in replacement for Anthropic's API. Claude Code never knows the difference — all three model tiers (Sonnet, Opus, Haiku) are mapped to `big-pickle`, which is an alias Zen uses internally. The actual underlying model may vary, as Zen benchmarks models anonymously to remove bias.
+Zen acts as a drop-in replacement for Anthropic's API. Claude Code never knows the difference — all three model tiers (Sonnet, Opus, Haiku) are mapped to `big-pickle`, which is an alias Zen uses internally. Also it delegate any potential SubAgents errors.
+The actual underlying model may vary, as Zen benchmarks models anonymously to remove bias.
 
 ---
 
