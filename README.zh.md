@@ -69,7 +69,7 @@ OpenCode Zen 是一个免费的、兼容 Anthropic 的 API 网关，用于基准
 ### 步骤 2 — 获取你的 Zen API Key
 
 访问 [opencode.ai/zen](https://opencode.ai/docs/zen/#how-it-works)，创建账户并复制你的 API key，无需启用计费。
-将它填入 `config.json` 文件中的 `PASTE_YOUR_KEY`。
+将它填入 `settings.json` 文件中的 `PASTE_YOUR_KEY`。
 
 ### 步骤 3 — 配置你的环境
 
@@ -77,7 +77,7 @@ OpenCode Zen 是一个免费的、兼容 Anthropic 的 API 网关，用于基准
 
 先备份你现有的配置，因为之后需要覆盖它。
 
-在你的主目录中创建或编辑 `.claude/config.json`：
+在你的主目录中创建或编辑 `.claude/settings.json`：
 
 ```json
 {
@@ -94,10 +94,10 @@ OpenCode Zen 是一个免费的、兼容 Anthropic 的 API 网关，用于基准
 
 ```text
 # macOS / Linux
-~/.claude/config.json
+~/.claude/settings.json
 
 # Windows
-%USERPROFILE%\.claude\config.json
+%USERPROFILE%\.claude\settings.json
 ```
 
 ### 步骤 4 — 启动 Claude Code
