@@ -77,7 +77,7 @@ OpenCode Zen هو بوابة API مجانية ومتوافقة مع Anthropic، 
 
 خذ نسخة احتياطية من إعداداتك الحالية أولًا، لأنك ستحتاج إلى الاستبدال.
 
-أنشئ أو عدل الملف `.claude/config.json` في مجلد المنزل:
+أنشئ أو عدل الملف `.claude/settings.json` في مجلد المنزل:
 
 ```json
 {
@@ -94,10 +94,10 @@ OpenCode Zen هو بوابة API مجانية ومتوافقة مع Anthropic، 
 
 ```text
 # macOS / Linux
-~/.claude/config.json
+~/.claude/settings.json
 
 # Windows
-%USERPROFILE%\.claude\config.json
+%USERPROFILE%\.claude\settings.json
 ```
 
 ### الخطوة 4 — شغّل Claude Code
