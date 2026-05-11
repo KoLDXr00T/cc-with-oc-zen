@@ -70,7 +70,7 @@ Visit [claude-code github repo](https://github.com/anthropics/claude-code)
 ### Step 2 — Get Your Zen API Key
 
 Visit [opencode.ai/zen](https://opencode.ai/docs/zen/#how-it-works) , create an account and copy your API key, no need to enable billing. 
-Place it in `PASTE_YOUR_KEY` in `config.json` file.
+Place it in `PASTE_YOUR_KEY` in `settings.json` file.
 
 ---
 
@@ -82,13 +82,13 @@ Fisrt back up you existing config , as you will need to overwrite your existing 
 
 ```
 # macOS / Linux
-~/.claude/config.json
+~/.claude/settings.json
 
 # Windows
-%USERPROFILE%\.claude\config.json
+%USERPROFILE%\.claude\settings.json
 ```
 
-Create or edit `config.json` in your home directory:
+Create or edit `settings.json` in your home directory:
 
 ```json
 {
